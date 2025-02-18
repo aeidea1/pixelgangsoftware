@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Wix Madefor Text", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: url(../assets/gif/reg.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    height: 100vh;
+}
+
+*::selection {
+    background-color: #dba548;
+    color: black;
+}
+
+body::-webkit-scrollbar {
+    width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #000000;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #292929;
+    border-radius: 20px;
+}
+
+noscript {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    color: black;
+    font-size: large;
+}
+
+header {
+    display: flex;
+    position: fixed;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background-color: #000000e4;
+    color: white;
+}
+
+header span {
+    font-size: medium;
+    letter-spacing: 0.5px;
+    font-family: "Pixelify Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+a {
+    font-family: "Manrope", serif;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.5ms;
+    color: white;
+}
+
+.list {
+    display: flex;
+    flex-direction: row;
+}
+
+.list>p {
+    font-size: small;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.list a:active {
+    transition: all 0.5ms;
+    color: #c4c4c4;
+}
+
+@media(hover: hover) and (pointer: fine) {
+    .list a:hover {
+        transition: all 0.5ms;
+        color: #c4c4c4;
+    }
+}
+
+/* content */
+.frame {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    height: 100vh;
+    width: 100%;
+    background-color: #2b2b2b89;
+}
+
+.registration,
+.entrance {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 370px;
+    height: 370px;
+    background-color: #000000b5;
+    margin: 15px;
+    padding: 20px;
+}
+
+span {
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-weight: 300;
+    font-size: 14px;
+    margin: 10px 0px;
+}
+
+input {
+    outline: none;
+    margin-bottom: 15px;
+    padding: 8px;
+    width: 200px;
+    height: 15px;
+    border: 0px;
+    background-color: #3f3f3fce;
+    color: #ffffff;
+    font-weight: 200;
+    font-size: 14px;
+}
+
+.label {
+    font-weight: 300;
+    font-size: 14px;
+    margin: 10px 0px;
+}
+
+#ent-btn,
+#reg-btn {
+    display: block;
+    margin: 10px auto;
+    width: 200px;
+    padding: 10px;
+    background-color: #ffffffcf;
+    border: 0;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.5ms;
+    cursor: pointer;
+}
+
+#ent-btn:active,
+#reg-btn:active {
+    background-color: #9c9c9c;
+    transition: all 0.5ms;
+}
+
+/* media */
+@media (max-width: 480px) {
+    /* Стили для смарфонов */
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    /* Стили для планшетов в портретной ориентации */
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    /* Стили для планшетов в ландшафтной ориентации */
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    /* Стили для небольших ноутбуков */
+}
+
+@media (min-width: 1281px) {
+    /* Стили для больших экранов */
+}

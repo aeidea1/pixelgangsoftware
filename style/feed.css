@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Wix Madefor Text", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+*::-webkit-scrollbar {
+    width: 0px;
+}
+
+html,
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #000000;
+    scroll-behavior: smooth;
+}
+
+*::selection {
+    background-color: #dba548;
+    color: black;
+}
+
+noscript {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    color: black;
+    font-size: large;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background-color: #000;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+header span {
+    font-size: medium;
+    letter-spacing: 0.5px;
+    font-family: "Pixelify Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+a {
+    font-family: "Manrope", serif;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.5ms;
+    color: white;
+}
+
+.list {
+    display: flex;
+    flex-direction: row;
+}
+
+.list>p {
+    font-size: small;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.list a:active {
+    transition: all 0.5ms;
+    color: #c4c4c4;
+}
+
+@media(hover: hover) and (pointer: fine) {
+    .list a:hover {
+        transition: all 0.5ms;
+        color: #c4c4c4;
+    }
+}
+
+/* content */
+.main-frame {
+    display: grid;
+    grid-template-columns: 240px 1fr 240px;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    color: #ffffff;
+    box-sizing: border-box;
+}
+
+.sidebar {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    height: 100%;
+    padding-top: 80px;
+}
+
+.sidebar-content {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sidebar-content span {
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+}
+
+.sidebar-content>p {
+    font-size: 14px;
+    padding: 10px 0px 0px 0px;
+}
+
+@media(hover: hover) and (pointer: fine) {
+    .sidebar-content a:hover {
+        transition: all 0.5ms;
+        color: #c4c4c4;
+    }
+}
+
+.sidebar-content>input {
+    margin-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: 0;
+    font-size: 14px;
+    height: 25px;
+    width: 140px;
+    outline: none;
+    font-weight: 500;
+    user-select: none;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+    display: none;
+}
+
+.suggestions-container {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 2px 5px #0000001a;
+    overflow-y: auto;
+    z-index: 10;
+}
+
+.suggestion-item {
+    font-size: 14px;
+    padding: 5px;
+    color: #000;
+    background-color: #fdfdfd;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    max-width: 140px;
+    overflow: hidden;
+}
+
+.suggestion-item:hover {
+    background-color: #ddd;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    overflow-y: auto;
+    max-width: 1200px;
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    box-sizing: border-box;
+    padding-top: 70px;
+    padding-bottom: 20px;
+}
+
+.content::-webkit-scrollbar {
+    width: 0px;
+}
+
+.news {
+    width: 100%;
+    min-height: auto;
+    background-color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 20px;
+    line-height: 1.5;
+    color: #000000;
+    scroll-margin-top: 70px;
+    font-weight: 500;
+}
+
+ul,
+ol {
+    padding-left: 5.5px;
+}
+
+.news>h2 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+
+/* media */
+@media (max-width: 480px) {
+    /* Стили для маленьких экранов */
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    /* Стили для планшетов в портретной ориентации */
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    /* Стили для планшетов в ландшафтной ориентации */
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    /* Стили для небольших ноутбуков */
+}
+
+@media (min-width: 1281px) {
+    /* Стили для больших экранов */
+}

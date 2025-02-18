@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Wix Madefor Text", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: url(../assets/gif/street.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+*::selection {
+    background-color: #dba548;
+    color: black;
+}
+
+body::-webkit-scrollbar {
+    width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #000000;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #292929;
+    border-radius: 20px;
+}
+
+noscript {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    color: black;
+    font-size: large;
+}
+
+header {
+    display: flex;
+    position: fixed;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background-color: #000000e4;
+    color: white;
+}
+
+header span {
+    font-size: medium;
+    letter-spacing: 0.5px;
+    font-family: "Pixelify Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+a {
+    font-family: "Manrope", serif;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.5ms;
+    color: white;
+}
+
+.list {
+    display: flex;
+    flex-direction: row;
+}
+
+.list>p {
+    font-size: small;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.list a:active {
+    transition: all 0.5ms;
+    color: #c4c4c4;
+}
+
+@media(hover: hover) and (pointer: fine) {
+    .list a:hover {
+        transition: all 0.5ms;
+        color: #c4c4c4;
+    }
+}
+
+/* content */
+.frame {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    padding-top: 70px;
+    width: 100%;
+    height: auto;
+    color: #ffffff;
+}
+
+.avatar-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #222222c7;
+    width: 350px;
+    height: 350px;
+    margin-right: 30px;
+}
+
+.avatar-block>p {
+    margin-top: 25px;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.avatar-block>img {
+    width: 160px;
+    height: 160px;
+    border-radius: 100%;
+    user-select: none;
+    border: #454545 solid 0.5px;
+}
+
+.avatar-block>button {
+    padding: 10px;
+    background-color: #ffffffcf;
+    margin: 20px;
+    border: 0;
+    font-size: 14px;
+    font-weight: 500;
+    width: 220px;
+    transition: all 0.5ms;
+}
+
+.avatar-block>button:active {
+    background-color: #9c9c9c;
+    transition: all 0.5ms;
+}
+
+.avatar-block>button>a {
+    color: #000000;
+    user-select: none;
+}
+
+#exit {
+    padding: 0;
+    margin: 0;
+}
+
+#exit>a {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.1px;
+}
+
+@media(hover: hover) and (pointer: fine) {
+    #exit>a:hover {
+        transition: all 0.5ms;
+        color: #c4c4c4;
+    }
+}
+
+.about-account {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    background-color: #222222c7;
+    width: 750px;
+    height: auto;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+.about-account>p {
+    font-size: 16px;
+    font-weight: 300;
+    padding: 17.5px 20px 0px 20px;
+    text-align: left;
+    line-height: 25px;
+}
+
+.prime-man,
+.prime-group {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+#prime-title {
+    margin-top: 8.5px;
+    margin-bottom: 5px;
+}
+
+#for-item {
+    padding-top: 5px;
+    font-size: 14px;
+}
+
+#for-item a:active {
+    transition: all 0.5ms;
+    color: #c4c4c4;
+}
+
+@media(hover: hover) and (pointer: fine) {
+    #for-item a:hover {
+        transition: all 0.5ms;
+        color: #c4c4c4;
+    }
+}
+
+.item {
+    flex: 0 0 calc(100% / 7);
+    text-align: center;
+    padding: 0px 5.5px 0px 5.5px;
+}
+
+.item>a {
+    user-select: none;
+    margin: 0px 2.5px 0px 2.5px;
+}
+
+.item img {
+    border: #727272 solid 0.5px;
+    width: 65px;
+    height: 65px;
+}
+
+/* media */
+@media (max-width: 480px) {
+    /* Стили для маленьких экранов */
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    /* Стили для планшетов в портретной ориентации */
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    /* Стили для планшетов в ландшафтной ориентации */
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    /* Стили для небольших ноутбуков */
+}
+
+@media (min-width: 1281px) {
+    /* Стили для больших экранов */
+}
